@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloKode url</title>
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="flex items-center justify-center flex-col h-screen w-screen">
+    <div id="main" class="bg-white container pt-10 pb-16 pl-12 pr-12 rounded-md">
+        <div class="text-3xl font-semibold p-3"><span class="text-4xl" style="color: #3c82f4;">BloKode</span>&nbsp;url
+        </div>
+        <form class="flex flex-wrap">
+            <div class="p-2 sm:w-1 lg:w-4/6">
+                <input id="url"
+                    class="bg-white focus:outline-none border border-gray-300 rounded-full py-2 px-4 block appearance-none leading-normal w-full"
+                    type="url" placeholder="단축할 URL (필수)" autofocus required>
+            </div>
+            <div class="p-2 sm:w-1 lg:w-1/6">
+                <input id="option"
+                    class="bg-white focus:outline-none border border-gray-300 rounded-full py-2 px-4 block appearance-none leading-normal w-full"
+                    type="text" placeholder="커스텀 링크">
+            </div>
+            <div class="p-2 sm:w-1 lg:w-1/6">
+                <input type="submit" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-full w-full"
+                    value="와! 단축!">
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+* {
+    font-family: 'Metropolis', 'Spoqa Han Sans';
+}
+
+body {
+    background-image: url(https://source.unsplash.com/2560x1440/?nature);
+}
+
+#main {
+    width: 40vw;
+}
+
+@media (max-width: 2000px) {
+    form.flex div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    #main {
+        width: 100vw;
+    }
+}
