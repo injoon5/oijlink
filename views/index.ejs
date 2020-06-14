@@ -2,36 +2,48 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BloKode url</title>
-    <link rel="stylesheet" href="tailwind.css">
-    <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BloKode url</title>
+  <link rel="stylesheet" href="tailwind.css">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body class="flex items-center justify-center flex-col h-screen w-screen">
-    <div id="main" class="bg-white container pt-10 pb-16 pl-12 pr-12 rounded-md">
-        <div class="text-3xl font-semibold p-3"><span class="text-4xl" style="color: #3c82f4;">BloKode</span>&nbsp;url
-        </div>
-        <form class="flex flex-wrap">
-            <div class="p-2 sm:w-1 lg:w-4/6">
-                <input id="url"
-                    class="bg-white focus:outline-none border border-gray-300 rounded-full py-2 px-4 block appearance-none leading-normal w-full"
-                    type="url" placeholder="단축할 URL (필수)" autofocus required>
-            </div>
-            <div class="p-2 sm:w-1 lg:w-1/6">
-                <input id="option"
-                    class="bg-white focus:outline-none border border-gray-300 rounded-full py-2 px-4 block appearance-none leading-normal w-full"
-                    type="text" placeholder="커스텀 링크">
-            </div>
-            <div class="p-2 sm:w-1 lg:w-1/6">
-                <input type="submit" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-full w-full"
-                    value="와! 단축!">
-            </div>
-        </form>
+  <div id="main" class="bg-white container pt-10 pb-16 pl-12 pr-12 rounded-md">
+    <div class="text-3xl font-semibold p-3"><span class="text-4xl" style="color: #3c82f4;">BloKode</span>&nbsp;url
     </div>
-    <script src="index.js"></script>
+    <form class="flex flex-wrap">
+      <div class="p-2 sm:w-1 lg:w-4/6">
+        <input id="url"
+          class="bg-white focus:outline-none border border-gray-300 rounded-full py-2 px-4 block appearance-none leading-normal w-full"
+          type="url" placeholder="단축할 URL (필수)" autofocus required>
+      </div>
+      <div class="p-2 sm:w-1 lg:w-1/6">
+        <input id="option"
+          class="bg-white focus:outline-none border border-gray-300 rounded-full py-2 px-4 block appearance-none leading-normal w-full"
+          type="text" placeholder="커스텀 링크">
+      </div>
+      <div class="p-2 sm:w-1 lg:w-1/6">
+        <input type="submit" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-full w-full"
+          value="와! 단축!">
+      </div>
+    </form>
+  </div>
+  <div class="modal" style="position: absolute; width: 100vw; height: 100vh; top: 0; left: 0; display: none;">
+    <div class="modal_background" style="position: absolute; width: 100vw; height: 100vh; background-color: #000000aa;" onclick="closeModal()">
+    </div>
+    <div id="main" class="bg-white container pt-10 pb-16 pl-12 pr-12 rounded-md" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">
+      <div class="text-3xl font-semibold p-3">단축된 URL</div>
+      <input id="output"
+        class="bg-white focus:outline-none border border-gray-300 rounded-full py-2 px-4 block appearance-none leading-normal w-full"
+        type="url" autofocus readonly required>
+      <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 mt-2 rounded-full" onclick="copy()">복사하기</button>
+    </div>
+  </div>
+  <div id="snackbar">링크가 클립보드에 복사되었습니다!</div>
+  <script src="index.js"></script>
 </body>
 
 </html>
