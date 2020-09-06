@@ -1,14 +1,14 @@
 {
-  "name": "blokode_url",
+  "name": "oijurl",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage" : "https://injoon5.github.io/oijlink/",
+  "homepage" : "https://ijurl.herokuapp.com/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "author": "",
+  "author": "injoon5",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.3",
