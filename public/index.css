@@ -2,10 +2,6 @@
     font-family: 'Metropolis', 'Spoqa Han Sans';
 }
 
-body {
-    background-image: url(https://source.unsplash.com/2560x1440/?nature);
-}
-
 #main {
     width: 40vw;
 }
