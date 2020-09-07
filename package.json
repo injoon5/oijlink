@@ -1,15 +1,14 @@
 {
-  "name": "oijurl",
+  "name": "oijlink",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Node.js url shortener.",
   "main": "index.js",
-  "homepage" : "https://ijurl.herokuapp.com/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
   "author": "injoon5",
-  "license": "ISC",
+  "license": "The-NoIE-License(https://git.io/noielicence)",
   "dependencies": {
     "ejs": "^3.1.3",
     "express": "^4.17.1",
