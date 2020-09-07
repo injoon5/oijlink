@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>blow.ga</title>
+  <title>oijlink.ga</title>
   <link rel="stylesheet" href="tailwind.css">
   <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="index.css">
@@ -33,6 +33,28 @@
     </table>
   </div>
   <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
+<script>
+  function addDarkmodeWidget() {
+    const options = {
+    bottom: '32px', // default: '32px'
+    right: '32px', // default: '32px'
+    left: 'unset', // default: 'unset'
+    time: '0.3s', // default: '0.3s'
+    mixColor: '#fff', // default: '#fff'
+    backgroundColor: '#fff',  // default: '#fff'
+    buttonColorDark: '#100f2c',  // default: '#100f2c'
+    buttonColorLight: '#fff', // default: '#fff'
+    saveInCookies: true, // default: true,
+    label: '🌓', // default: ''
+  autoMatchOsTheme: true // default: true
+  }
+
+  const darkmode = new Darkmode(options);
+  darkmode.showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+</script>
 </body>
 
 </html>
