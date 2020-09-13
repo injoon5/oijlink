@@ -33,7 +33,7 @@ document
       .then((res) => res.text())
       .then((data) =>
         data == 'ERR'
-          ? alert('이미 존재하는 커스텀 URL입니다!')
+          ? alert('이미 존재하는 커스텀 URL입니다!/This custom URL is already existing!')
           : (document.getElementById(
               'output'
             ).value = `${location.protocol}//${location.host}/${data}`)
