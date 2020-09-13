@@ -4,6 +4,7 @@
 
 #main {
   width: 40vw;
+  background-color:#f6f8fa;
 }
 
 @media (max-width: 2000px) {
