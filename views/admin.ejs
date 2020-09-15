@@ -3,17 +3,16 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>oijlink.ga</title>
   <link rel="stylesheet" href="tailwind.css">
   <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="index.css">
 </head>
 
-<body class="flex items-center justify-center flex-col h-screen w-screen">
-  <div id="main" class="bg-white container pt-10 pb-16 pl-12 pr-12 rounded-md">
-    <div class="text-3xl font-semibold p-3">Admin</div>
-    <table class="table-auto w-full">
+<body class="flex items-center justify-center flex-col">
+    <div class="text-3xl font-semibold p-3">Admin<a class="btn btn-outline mr-2" href="https://oijlink.glitch.me" type="button">홈으로</a></div>
+    <table>
       <thead>
         <tr>
           <th class="px-4 py-2">ID</th>
@@ -26,12 +25,12 @@
           <tr>
             <td class="border px-4 py-2"><%= id[i] %></td>
             <td class="border px-4 py-2"><a href="<%= data[i] %>" target="_blank"><%= data[i] %></a></td>
-            <td class="border px-4 py-2"><button class="linkdelete bg-red-600 hover:bg-red-700 text-white py-2 px-3 rounded-full">삭제</button></td>
+            <td class="border px-4 py-2"><button class="linkdelete btn btn-danger mr-2" onclick="location.reload()">삭제</button></td>
           </tr>
         <% } %>
       </tbody>
     </table>
-  </div>
+
   <script src="index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
 <script>
