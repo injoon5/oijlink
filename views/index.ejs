@@ -35,7 +35,9 @@
       </div>
       <div class="p-1 sm:w-1 lg:w-1/6">
         <input type="submit" class="btn btn-block mb-1"
-          value="단축">
+          value="단축" data-sitekey="6Le1qc4ZAAAAALCgz8yvhQ8gGYzElbjPQ5yvlxO1" 
+        data-callback='onSubmit' 
+        data-action='submit'>
         <br>
         <a class="btn btn-outline mr-2" href="https://oijlink.glitch.me/community" type="button" >커뮤니티</a>
         <a class="btn btn-outline mr-2" href="https://oijlink.glitch.me/en" type="button" >English</a>
@@ -58,6 +60,12 @@
     </div>
   </div>
   <div id="snackbar">링크가 클립보드에 복사되었습니다!</div>
+   <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+   function onSubmit(token) {
+     document.getElementById("demo-form").submit();
+   }
+ </script>
   <script src="index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
 <script>
