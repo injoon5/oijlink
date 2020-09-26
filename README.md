@@ -7,6 +7,7 @@
   <a href="https://github.com/injoon5/oijlink/blob/master/licence" target="_blank">
     <img alt="License: The-NoIE-License" src="https://img.shields.io/badge/Licence-The--NoIE--License-yellow" />
   </a>
+  <a href="https://deepscan.io/dashboard#view=project&tid=11066&pid=13982&bid=249545"><img src="https://deepscan.io/api/teams/11066/projects/13982/branches/249545/badge/grade.svg" alt="DeepScan grade"></a>
 </p>
 
 > A Node.js URL shortener that has a community and uses primer. The CSS that powers GitHub.
