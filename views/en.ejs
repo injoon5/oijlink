@@ -37,11 +37,9 @@
         <input type="submit" class="btn btn-block mb-1"
           value="Shorten">
         <br>
-        
-        
-        
-        <a class="btn btn-outline mr-2" href="https://oijlink.glitch.me/community" type="button" >Community</a>
-        <a class="btn btn-outline mr-2" href="https://oijlink.glitch.me" type="button" >한국어</a>
+        <a class="btn btn-outline mr-2" href="/community" type="button" >Community</a>
+        <a class="btn btn-outline mr-2" href="/en" type="button" >한국어</a>
+        <button class="btn btn-outline mr-2" onclick="prevVer()" type="button" >Prev. version</button>
       </div>
 
     </form>
@@ -60,6 +58,15 @@
     </div>
   </div>
   <div id="snackbar">Shortened link copied to clipboard.</div>
+  <script>
+  function prevVer()  {
+    var a = prompt("경고: 이전 버전에서는 오류가 발생 할 수 있습니다. 진행하시려면 입력창에 진행이라고 적은 뒤 Enter를 누르십시오", "진행")
+    if (a === "진행") {
+      alert("오류 발생시 최근 버전 커뮤니티로 공지 바랍니다. 곧 새 창이 열립니다.")
+      open("https://linkro.glitch.me")
+    }
+  }
+</script>
   <script src="index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
 <script>
