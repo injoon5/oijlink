@@ -12,9 +12,9 @@
 
 > A Node.js URL shortener that has a community and uses primer. The CSS that powers GitHub.
 
-### 🏠 [Homepage](https://urlsh.glitch.me)
+### 🏠 [Homepage](https://urlsh.kro.kr)
 
-### ✨ [Demo](https://urlsh.glitch.me)
+### ✨ [Demo](https://urlsh.kro.kr)
 
 ## Install
 
