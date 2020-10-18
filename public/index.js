@@ -1,4 +1,4 @@
-Array.from(document.getElementsByClassName('linkdelete')).forEach((el) => {
+rray.from(document.getElementsByClassName('linkdelete')).forEach((el) => {
   el.addEventListener('click', async (e) => {
     await fetch('/api/delete', {
       method: 'POST',
