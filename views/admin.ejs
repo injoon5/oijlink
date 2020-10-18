@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>oijlink.ga</title>
+  <title>urlsh - admin</title>
   <link rel="stylesheet" href="tailwind.css">
   <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="index.css">
 </head>
 
 <body class="flex items-center justify-center flex-col">
-    <div class="text-3xl font-semibold p-3">Admin<a class="btn btn-outline mr-2" href="https://oijlink.glitch.me" type="button">홈으로</a></div>
+    <div class="text-3xl font-semibold p-3">Admin<a class="btn btn-outline mr-2" href="/" type="button">메인으로</a></div>
     <table>
       <thead>
         <tr>
@@ -25,11 +25,12 @@
           <tr>
             <td class="border px-4 py-2"><%= id[i] %></td>
             <td class="border px-4 py-2"><a href="<%= data[i] %>" target="_blank"><%= data[i] %></a></td>
-            <td class="border px-4 py-2"><button class="linkdelete btn btn-danger mr-2" onclick="location.reload()">삭제</button></td>
+            <td class="border px-4 py-2"><button class="linkdelete btn btn-danger mr-2">삭제</button></td>
           </tr>
         <% } %>
       </tbody>
     </table>
+  
 
   <script src="index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
@@ -54,6 +55,29 @@
   }
   window.addEventListener('load', addDarkmodeWidget);
 </script>
+  <script>// We can get the token from the "access_token" query
+    // param, available in the browsers "location" global
+    const query = window.location.search.substring(1);
+    const token = query.split("access_token=")[1];
+
+    // Call the user info API using the fetch browser library
+    fetch("//api.github.com/user", {
+      headers: {
+        // Include the token in the Authorization header
+        Authorization: "token " + token
+      }
+    })
+      // Parse the response as JSON
+      .then(res => res.json())
+      .then(res => {
+        // Once we get the response (which has many fields)
+        // Documented here: https://developer.github.com/v3/users/#get-the-authenticated-user
+        // Write "Welcome <user name>" to the documents body
+        if (res.name != "injoon" && res.name != "codingCup04" && res.name != '박민우') {
+          window.location.href = 'https://github.com/login/oauth/authorize?client_id=7cfc702671649f90e0a3&redirect_url=https://urlsh.kro.kr/oauth/redirect'
+        }
+
+      });</script>
 </body>
 
 </html>
