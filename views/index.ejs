@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>oijlink.ga</title>
+  <title>urlsh - kr</title>
   <link rel="stylesheet" href="tailwind.css">
   <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="index.css">
+
   <link rel="manifest" href="manifest.json" />
   <link rel="apple-touch-icon" href="https://cdn.glitch.com/d3ad93d7-23bb-46ff-ac03-085df39678ba%2F%EC%A0%9C%EB%AA%A9%EC%9D%84%20%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94._1%20(3).png?v=1599986898156">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -16,11 +17,18 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
   <link rel="shortcut icon" href="https://cdn.glitch.com/d3ad93d7-23bb-46ff-ac03-085df39678ba%2F%EC%A0%9C%EB%AA%A9%EC%9D%84%20%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94._1%20(3).png?v=1599986898156" type="image/x-icon">
+  <script>var notice - "gkdlfn"</script>
 </head>
 
-<body class="flex items-center justify-center flex-col h-screen w-screen">
+<body>
+    <div class="flash flash-full"  id="elemDel">
+  새로 오픈!! <span style="text-align: right" onclick="deleteElem()"> &times</span>
+</div>
+ <div class="flex items-center justify-center flex-col h-screen w-screen">
+   
+
   <div id="main" class="bg-white container pt-10 pb-16 pl-12 pr-12 rounded-md">
-    <div class="text-3xl font-semibold p-3"><span class="text-4xl" style="color: #1E88E5;">oijlink</span>.ga
+    <div class="text-3xl font-semibold p-3"><span class="text-4xl" style="color: #1E88E5;">urlsh</span>.kro.kr
     </div>
     <form class="flex flex-wrap">
       <div class="p-1 sm:w-1 lg:w-4/6">
@@ -40,9 +48,14 @@
         data-action='submit'>
         <br>
         <a class="btn btn-outline mr-2" href="/community" type="button" >커뮤니티</a>
-        <a class="btn btn-outline mr-2" href="/en" type="button" >English</a>
         <button class="btn btn-outline mr-2" onclick="prevVer()" type="button" >이전 버전</button>
-      </div>
+        <a class="btn btn-outline mr-2" href="https://github.com/login/oauth/authorize?client_id=
+7cfc702671649f90e0a3&redirect_url=https://urlsh.kro.kr/oauth/redirect" type="button" >로그인</a>
+        <br> 
+        <br>
+        <p>
+          (Original: thoratica. Redesigned: injoon5, codingcup04)<br> Copyright. 2020. All rights reserved.  
+        </p>
 
     </form>
   </div>
@@ -60,9 +73,14 @@
     </div>
   </div>
   <div id="snackbar">링크가 클립보드에 복사되었습니다!</div>
-  <div style="bottom: 10px; left: 50%">
-  <p>Copyright 2020. All Rights Reserved<p>
+
   </div>
+   <script>
+   function deleteElem()  {
+       document.getElementById("elemDel").style.display = "none"  
+       
+   }
+   </script>
   <script>
   function prevVer()  {
     var a = prompt("경고: 이전 버전에서는 오류가 발생 할 수 있습니다. 진행하시려면 입력창에 진행이라고 적은 뒤 Enter를 누르십시오", "진행")
@@ -95,7 +113,6 @@
     label: '🌓', // default: ''
   autoMatchOsTheme: true // default: true
   }
-
   const darkmode = new Darkmode(options);
   darkmode.showWidget();
   }
