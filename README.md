@@ -8,7 +8,6 @@
     <img alt="License: The-NoIE-License" src="https://img.shields.io/badge/Licence-The--NoIE--License-yellow" />
   </a>
   <a href="https://deepscan.io/dashboard#view=project&tid=11066&pid=13982&bid=249545"><img src="https://deepscan.io/api/teams/11066/projects/13982/branches/249545/badge/grade.svg" alt="DeepScan grade"></a>
-  <a>[![Run on Repl.it](https://repl.it/badge/github/injoon5/oijlink)](https://repl.it/github/injoon5/oijlink)</a>
 </p>
 ![Run on Repl.it](https://repl.it/badge/github/injoon5/oijlink)](https://repl.it/github/injoon5/oijlink)
 
