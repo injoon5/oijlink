@@ -16,7 +16,7 @@
     "express": "^4.17.1",
     "node-fetch": "^2.6.0",
     "quick.db": "^7.1.1",
-    "tailwindcss": "^1.4.6",
+    "tailwindcss": "^1.9.6",
     "axios": "^0.20.0"
   },
   "devDependencies": {
