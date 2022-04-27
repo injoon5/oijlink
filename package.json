@@ -12,7 +12,7 @@
   "author": "injoon5",
   "license": "MIT",
   "dependencies": {
-    "ejs": "^3.1.3",
+    "ejs": "^3.1.7",
     "express": "^4.17.1",
     "node-fetch": "^2.6.0",
     "quick.db": "^7.1.1",
